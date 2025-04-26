@@ -1,0 +1,10 @@
+.layout {
+  width: 100%;
+  display: flex;
+}
+
+.children {
+  width: calc(100% - 60px);
+  margin-left: 60px;
+  background: #fafbfd;
+}

@@ -1,0 +1,32 @@
+.modalContent {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.fadeIn {
+  opacity: 1;
+  transform: scale(1);
+  min-width: 400px;
+  padding: 32px;
+}
+
+.fadeOut {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.modal_children {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  letter-spacing: 0.0075em;
+
+  h2 {
+    text-align: center;
+    margin: 0 0 20px;
+    font-size: 25px;
+    color: #1083b7;
+  }
+}

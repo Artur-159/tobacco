@@ -1,0 +1,15 @@
+.main_input input[type="number"]::-webkit-inner-spin-button,
+.main_input input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+}
+
+.error {
+  color: #d32f2f;
+  position: absolute;
+}
+
+.main_input {
+  width: 100% !important;
+  background: white;
+}

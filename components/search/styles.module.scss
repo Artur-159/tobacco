@@ -1,0 +1,21 @@
+.search {
+  position: relative;
+  width: 100%;
+
+  .search_inp {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+  }
+
+  .search_icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #1976d2;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: transparent;
+  }
+}

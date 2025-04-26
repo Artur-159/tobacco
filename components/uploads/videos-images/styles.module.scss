@@ -1,0 +1,51 @@
+.img_input {
+  position: relative;
+  display: inline-block;
+
+  input[type="file"] {
+    display: none;
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+
+  label {
+    display: block;
+    padding: 80px;
+    border: 2px dashed #eeeeee;
+    border-radius: 2px;
+    background-color: #fafafa;
+    color: #bdbdbd;
+    outline: none;
+    cursor: pointer;
+    transition: border 0.24s ease-in-out;
+  }
+}
+
+.img_box {
+  display: flex;
+  list-style: none;
+  padding: 0;
+
+  li {
+    display: flex;
+    list-style-type: none;
+    list-style: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+  .clear_icon {
+    color: #e74c3c;
+    cursor: pointer;
+  }
+}
+
+.error {
+  color: #d32f2f;
+}

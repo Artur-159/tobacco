@@ -1,0 +1,28 @@
+.pagination {
+  .pagination_btn {
+    font-size: 14px !important;
+    min-width: 64px;
+    &.active {
+      font-size: 16px !important;
+      color: #1976d2;
+      background: rgba(25, 118, 210, 0.2);
+      min-width: 64px;
+      height: 31px;
+    }
+  }
+
+  .totalPage_btn {
+    font-size: 14px !important;
+  }
+
+  button {
+    &:first-child,
+    &:last-child {
+      font-size: 16px;
+    }
+  }
+
+  span {
+    margin-bottom: 9px;
+  }
+}

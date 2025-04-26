@@ -1,0 +1,29 @@
+.textarea {
+  padding: 8px;
+  resize: none;
+  outline: none;
+  border-color: hsl(0, 0%, 80%);
+  border-radius: 4px;
+
+  &:focus-visible {
+    border: 1px solid #0065cd;
+    box-shadow: #0065cd 0px 1px 2px, #0067cd 0px 0px 0px 1px;
+  }
+
+  &::placeholder {
+    font-size: 16px;
+    color: hsl(0, 0%, 50%);
+  }
+}
+
+.textarea_error {
+  padding: 20px;
+  border: 2px solid #d32f2f;
+  &:focus-visible {
+    border: 4px solid #d32f2f !important;
+  }
+}
+
+.error {
+  color: #d32f2f;
+}

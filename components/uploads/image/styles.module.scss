@@ -1,0 +1,85 @@
+.img_input {
+  position: relative;
+  border: 2px dashed #d9d9d9;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9 !important;
+  text-align: center;
+  transition: background-color 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f3f4f6;
+  }
+
+  &:focus-within {
+    border-color: var(--primary-color);
+    background-color: #f3f4f6;
+  }
+
+  input[type="file"] {
+    display: none;
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+
+  label {
+    display: block;
+    padding: 80px;
+    border: 2px dashed #eeeeee;
+    border-radius: 2px;
+    background-color: #fafafa;
+    color: #bdbdbd;
+    outline: none;
+    cursor: pointer;
+    transition: border 0.24s ease-in-out;
+  }
+}
+
+.preview {
+  max-width: 150px;
+  max-height: 150px;
+  margin-top: 20px;
+}
+
+.clear_icon {
+  color: #e74c3c;
+  cursor: pointer;
+}
+
+.error {
+  color: #d32f2f;
+}
+
+.modal {
+  width: 75% !important;
+  padding: 16px;
+
+  .modal_content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    .close_icon {
+      top: -20px;
+      right: 10px;
+    }
+
+    .big_img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    svg {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      cursor: pointer;
+    }
+  }
+}

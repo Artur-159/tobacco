@@ -1,0 +1,34 @@
+.form_input_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-right: 26px;
+  margin-bottom: 20px;
+}
+
+.form_input_wrapper > div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form_input_wrapper > div > div {
+  padding-top: 0 !important;
+  overflow: unset;
+}
+
+.form_input_wrapper > div > div:nth-child(1) {
+  background: white;
+}
+
+.date_input {
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+
+  > div {
+    margin-top: 0;
+  }
+}

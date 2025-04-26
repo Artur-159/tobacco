@@ -1,0 +1,111 @@
+.sidebar {
+  width: 64px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: white;
+  box-shadow: 2px 4px 13px 0px #0000000a;
+  overflow: hidden;
+  transition: 0.4s;
+
+  &.open {
+    width: 260px;
+  }
+
+  .sidebar_inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 260px;
+
+    .sidebar_header {
+      display: flex;
+      align-items: center;
+      height: 60px;
+      border-bottom: 1px solid #13a4e5;
+
+      .sidebar_burger {
+        width: 64px;
+        height: 60px;
+        display: grid;
+        place-items: center;
+        background: white;
+
+        svg {
+          width: 26px;
+          height: 26px;
+        }
+      }
+    }
+
+    .sidebar_menu {
+      display: grid;
+      padding: 24px 16px 24px 10px;
+
+      ul {
+        padding-left: 0;
+        margin: 0;
+
+        a {
+          color: black;
+        }
+      }
+
+      .sidebar_button {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: capitalize;
+        line-height: 1;
+        padding: 10px;
+        margin: 4px 0 0;
+        border-radius: 8px;
+
+        .item_name {
+          opacity: 0.8;
+          margin: 0;
+        }
+
+        > img {
+          width: 24px;
+          height: 24px;
+        }
+
+        > span {
+          opacity: 0.5;
+        }
+
+        &:hover {
+          background: #13a4e5;
+          color: white;
+          opacity: 1;
+
+          > span {
+            opacity: 1;
+          }
+
+          > img {
+            filter: brightness(0) invert(1);
+          }
+        }
+        &.active {
+          background: #13a4e5;
+          opacity: 1;
+          color: white;
+
+          > img {
+            filter: brightness(0) invert(1);
+          }
+        }
+      }
+    }
+
+    .sidebar.open :is(.sidebar_button p, .sidebar-logo) {
+      opacity: 1;
+    }
+  }
+}
