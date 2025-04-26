@@ -1,0 +1,16 @@
+@use "../../../../styles/mixins";
+
+.list {
+  display: flex;
+  flex-direction: column;
+
+  .list_item {
+    @include mixins.listStyles;
+    padding: 16px;
+    margin: 10px 0;
+
+    p {
+      margin: 0;
+    }
+  }
+}

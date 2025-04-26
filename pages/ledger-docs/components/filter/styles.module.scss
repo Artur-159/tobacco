@@ -1,0 +1,12 @@
+.submit_btn {
+  position: relative;
+  z-index: 9999;
+  height: 39px;
+  padding: 6px 8px;
+  border-radius: 4px;
+  margin: 25px !important;
+  transition: all 0.3s;
+  &:hover {
+    background: rgba(25, 118, 210, 0.04);
+  }
+}

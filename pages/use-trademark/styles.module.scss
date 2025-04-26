@@ -1,0 +1,36 @@
+@use "../../styles/mixins";
+
+.list_item {
+  @include mixins.listStyles();
+  padding-left: 16px;
+
+  .list_item_name {
+    @include mixins.flexCenter(flex-start, 0);
+   
+    .item_inner {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.ues_trademark_select {
+  width: 800px;
+}
+
+.use_trademark_img {
+  margin: 20px 0;
+  object-fit: contain;
+}
+
+.top_block {
+  display: flex;
+  gap: 30px;
+  width: 90%;
+
+  .search {
+    width: 250px;
+  }
+}

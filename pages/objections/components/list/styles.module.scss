@@ -1,0 +1,86 @@
+@use "../../../../styles/mixins";
+
+.list {
+  display: block;
+  margin-top: 40px;
+
+  .objection {
+    @include mixins.listStyles;
+    display: block;
+
+    .objection_head_info {
+      display: grid;
+      grid-template-columns: 1fr 24px;
+      align-items: center;
+      font-size: 18px;
+      color: gray;
+      padding-right: 20px;
+      position: relative;
+
+      .menu > button {
+        padding: 0;
+      }
+
+      > a {
+        text-indent: 20px;
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 96%;
+        height: 1px;
+        background: #3498db;
+        bottom: 0;
+      }
+
+      .trademark_arm {
+        font-size: 14px;
+      }
+
+      .objection_head {
+        @include mixins.flexCenter(flex-start, 0);
+
+        span {
+          font-size: 18px !important;
+        }
+      }
+    }
+
+    .objection_info {
+      @include mixins.flexCenter(space-between, 20px);
+      align-items: flex-start;
+      padding: 16px 36px 16px 36px;
+
+      img {
+        object-fit: contain;
+      }
+
+      .info_section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        p {
+          margin-top: 5px;
+          font-size: 15px;
+        }
+
+        h4 {
+          font-size: 15px;
+          color: gray;
+        }
+      }
+    }
+  }
+}
+
+.objection_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  a {
+    color: black;
+  }
+}

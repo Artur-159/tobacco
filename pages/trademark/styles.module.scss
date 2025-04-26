@@ -1,0 +1,322 @@
+.list {
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .number_name {
+      display: flex;
+      gap: 10px;
+      border-bottom: 2px solid #1976d2;
+      padding: 4px 0px;
+      color: #1976d2;
+    }
+
+    .info_box {
+      display: flex;
+      align-items: center;
+      gap: 11%;
+      padding-bottom: 20px;
+
+      .box {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        height: 35px;
+      }
+
+      h4 {
+        color: #bfbfbf;
+      }
+
+      .list_name {
+        width: 270px;
+
+        @media (max-width: 1300px) {
+          max-width: 190px;
+        }
+      }
+    }
+  }
+}
+
+.create_blog {
+  .btn_create {
+    margin: 50px auto;
+    display: flex;
+  }
+}
+
+.add_inp_img {
+  display: flex;
+
+  .add_input {
+    display: grid;
+    gap: 6%;
+  }
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+
+  button {
+    margin: 30px 0;
+  }
+}
+
+.form_input,
+.select,
+.add_file_select,
+.doc_name_inp {
+  width: 100%;
+}
+
+.select {
+  > div {
+    height: 40px;
+  }
+}
+
+.first_select,
+.add_file_select {
+  min-width: 225px !important;
+}
+
+.add_file_block {
+  margin-top: 30px;
+
+  a {
+    transition: all 0.3s;
+    color: #1976d2;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  .add_file_info {
+    display: flex;
+    gap: 10px;
+
+    &:first-child {
+      margin-top: 50px;
+    }
+
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+
+    > div {
+      &:first-child {
+        max-width: 500px;
+      }
+      &:nth-child(2) {
+        width: 48%;
+        background: white;
+      }
+
+      > div {
+        min-width: 100%;
+      }
+    }
+
+    button {
+      padding: 6px;
+      min-width: 40px;
+      box-shadow: none;
+
+      span {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.add_file_btn {
+  width: max-content;
+}
+
+.mark_form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  .input {
+    width: 100%;
+    background-color: white;
+  }
+
+  > div {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+.mark_form_left,
+.mark_form_right {
+  > div {
+    padding-top: 0 !important;
+    overflow: unset;
+  }
+}
+
+.mark_form_right {
+  gap: 13px !important;
+}
+
+.add_imp_img {
+  margin-top: 0;
+}
+
+.search {
+  width: 250px;
+}
+
+.top_block {
+  display: flex;
+  align-items: end;
+  gap: 30px;
+  width: 90%;
+}
+
+.btn_create {
+  height: 40px;
+}
+
+.pdf_select {
+  font-size: 14px !important;
+  width: 280px !important;
+  margin: 0 auto 20px !important;
+}
+
+.modal {
+  margin-left: auto;
+  img {
+    margin-left: 5px;
+  }
+}
+
+.service {
+  .title {
+    font-size: 25px;
+    margin-bottom: 40px;
+    color: #1083b7;
+  }
+
+  .details_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 0 0 20px;
+    margin: 0 -20px 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    @media (max-width: 1024px) {
+      padding: 20px 0 20px 20px;
+    }
+
+    @media (max-width: 990px) {
+      display: block;
+    }
+
+    .section {
+      padding: 15px;
+      margin: 0 20px 20px 0;
+      background: white;
+      border: 1px solid #e8e8e8;
+      border-radius: 16px;
+      box-shadow: 2px 4px 13px 0px rgba(0, 0, 0, 0.0392156863);
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+          rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+      }
+    }
+  }
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.section {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.row span:first-child {
+  font-weight: 500;
+  color: #666;
+}
+
+.row span:last-child {
+  color: #333;
+}
+
+.pdf_btn {
+  display: block !important;
+  margin: 30px auto 0 !important;
+}
+
+.filter_select {
+  font-size: 16px;
+}
+
+.filter_modal {
+  min-width: 650px;
+}
+
+.mark_form_left,
+.mark_form_right {
+  > div {
+    padding-top: 0 !important;
+    overflow: unset;
+  }
+}
+.mark_form_right {
+  gap: 13px !important;
+}
+
+.table_title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 60px 0 30px;
+  font-size: 25px;
+  margin-bottom: 40px;
+  color: #1083b7;
+
+  img {
+    width: 25px;
+    height: 25px;
+  }
+}

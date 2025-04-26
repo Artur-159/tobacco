@@ -1,0 +1,13 @@
+.head_item {
+  display: flex;
+  margin-bottom: 30px;
+
+  .search {
+    width: 500px;
+    margin-left: 20px;
+    .search_inp {
+      padding-right: 0 !important;
+      margin-left: 0 !important;
+    }
+  }
+}

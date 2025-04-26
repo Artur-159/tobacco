@@ -1,0 +1,118 @@
+@use "../../styles/_mixins.scss";
+
+.list {
+  @include mixins.listStyles;
+  width: 90%;
+  padding: 16px;
+
+  .create_blog_inputs_bnt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    height: 400px;
+    margin-bottom: 30px;
+    gap: 10px;
+
+    .list_name {
+      width: 270px;
+
+      @media (max-width: 1300px) {
+        max-width: 190px;
+      }
+    }
+
+    .list_desc {
+      width: 500px;
+      height: 200px;
+
+      @media (max-width: 1520px) {
+        max-width: 450px;
+      }
+      @media (max-width: 1400px) {
+        max-width: 340px;
+      }
+      @media (max-width: 1110px) {
+        max-width: 280px;
+      }
+    }
+  }
+
+  .img_video_list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 150px;
+    gap: 20px;
+
+    @media (max-width: 1300px) {
+      width: 90%;
+    }
+  }
+
+  .info {
+    display: flex;
+    gap: 5%;
+    width: 60%;
+
+    .img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+h4 {
+  margin-top: 10px !important;
+}
+
+.btn {
+  display: flex;
+  gap: 6px;
+}
+
+.create_blog {
+  .btn_create {
+    margin: 50px auto;
+    display: flex;
+  }
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.create_service {
+  max-width: 600px;
+  margin: 0 auto;
+
+  .img_slc_inp {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    margin-bottom: 20px;
+
+    .city_img {
+      width: 570px;
+      div {
+        height: 97px;
+        padding: 0 14px;
+        margin: 0;
+      }
+    }
+  }
+
+  .img_slc_inp div {
+    &:not(:last-child) {
+      width: 100%;
+    }
+  }
+
+  button {
+    margin: 0 auto 60px;
+    display: flex;
+  }
+}

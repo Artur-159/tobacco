@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+
+  .title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .form_input,
+  .select,
+  .personal_img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .btn_create {
+    display: flex;
+    margin: 20px auto 0;
+  }
+
+  .form_input {
+    position: relative;
+    z-index: 0;
+
+    div {
+      &:nth-child(1) {
+        width: 100%;
+      }
+    }
+  }
+
+  .role_text,
+  .company_text {
+    margin-bottom: 10px;
+  }
+}

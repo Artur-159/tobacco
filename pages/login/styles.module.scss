@@ -1,0 +1,57 @@
+@use "../../styles/mixins";
+
+.container {
+  @include mixins.flexCenter(center);
+  height: 100%;
+
+  .login {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+
+    .lock_icon {
+      @include mixins.flexCenter(center);
+      width: 25px;
+      height: 25px;
+      margin: 0 auto;
+      background-color: #1976d2;
+      padding: 10px;
+      border-radius: 50%;
+    }
+
+    .login_title {
+      text-align: center;
+    }
+
+    .login_text {
+      color: lightgrey;
+      text-align: center;
+    }
+
+    .login_form {
+      margin-bottom: 20px;
+      .login_input {
+        margin-top: 30px;
+        width: 100%;
+      }
+    }
+
+    .btn_log_reg {
+      width: 100%;
+
+      .btn {
+        width: inherit;
+        padding: 10px;
+        font-size: 17px;
+
+        a {
+          color: white;
+        }
+      }
+    }
+
+    .recaptcha {
+      margin-bottom: 40px;
+    }
+  }
+}

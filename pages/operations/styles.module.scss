@@ -1,0 +1,54 @@
+.wrapper {
+  max-width: 100%;
+  padding-bottom: 20px;
+
+  p {
+    margin: 0;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto 55px auto;
+
+    .amount {
+      display: flex;
+      gap: 10px;
+    }
+
+    .submit_btn {
+      width: 200px;
+      margin: 0 auto;
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+
+    .list_item {
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid gray;
+      padding: 6px;
+      border-radius: 6px;
+    }
+  }
+}
+.filter_submit_btn {
+  position: relative;
+  z-index: 9999;
+  height: 39px;
+  padding: 6px 8px;
+  border-radius: 4px;
+  margin: 25px !important;
+  transition: all 0.3s;
+}

@@ -1,0 +1,36 @@
+.fields_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  .fields_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .inputs_block,
+  .selects_block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .selects_block {
+    div {
+      font-size: 16px;
+      white-space: wrap;
+    }
+  }
+
+  .filter_select {
+    width: 100%;
+  }
+
+  button {
+    margin: 20px 0 0;
+  }
+}

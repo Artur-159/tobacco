@@ -1,0 +1,13 @@
+.form {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 55px;
+  label {
+    overflow: visible;
+    line-height: 7px;
+  }
+  input {
+    padding: 6.5px 14px !important;
+  }
+}

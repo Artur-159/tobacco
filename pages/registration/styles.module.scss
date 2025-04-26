@@ -1,0 +1,9 @@
+.reg{
+    display: flex;
+    height: 450px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    .reg_input{
+        margin-right: 50px;
+    }
+}

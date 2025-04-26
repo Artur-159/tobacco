@@ -1,0 +1,44 @@
+@use "../../styles/mixins.scss";
+
+.list_title {
+  font-size: 25px;
+  margin-bottom: 55px;
+  color: #1083b7;
+}
+
+.list {
+  gap: 40px;
+  margin: 20px 0;
+  width: 90%;
+  border: 1px solid #e8e8e8;
+  background: white;
+  box-shadow: 2px 4px 13px 0px #0000000a;
+  border-radius: 16px;
+  padding: 25px;
+  transition: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+      rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+
+    .inner_block {
+      display: flex;
+      gap: 5%;
+      width: 60%;
+    }
+
+    img {
+      margin-left: 5px;
+    }
+
+    .count {
+      margin-left: auto !important;
+    }
+  }
+}

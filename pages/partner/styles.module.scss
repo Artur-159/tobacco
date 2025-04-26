@@ -1,0 +1,301 @@
+@use "../../styles/_mixins.scss";
+
+.list {
+  @include mixins.listStyles;
+  align-items: flex-start;
+
+  .info_block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+
+    .info_block {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .info_box {
+      display: flex;
+      gap: 11%;
+      padding: 16px 36px;
+
+      img {
+        object-fit: contain;
+      }
+
+      .box_info {
+        align-items: center;
+        gap: 10px;
+      }
+
+      h4 {
+        color: gray;
+        font-size: 15px;
+      }
+
+      span {
+        font-size: 15px;
+      }
+
+      .list_name {
+        width: 270px;
+
+        @media (max-width: 1300px) {
+          max-width: 190px;
+        }
+      }
+    }
+  }
+}
+.top_bar {
+  display: flex;
+  gap: 30px;
+
+  .create_blog {
+    .btn_create {
+      margin: 50px auto;
+      display: flex;
+    }
+  }
+
+  .search {
+    width: 250px;
+  }
+}
+
+.add_phone_number {
+  margin-top: -8px;
+
+  .add_input {
+    display: grid;
+    gap: 10px;
+
+    > div {
+      padding-top: 8px;
+      overflow: unset;
+      label {
+        overflow: unset;
+      }
+    }
+  }
+}
+
+.form_input {
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  > div {
+    width: 48%;
+  }
+}
+
+.add_imp_img {
+  width: 600px;
+}
+
+.add_phone_number {
+  width: 400px !important;
+  max-height: 225px;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #d1d1d1;
+    border-radius: 4px;
+  }
+}
+
+.btn {
+  display: flex;
+  margin: 50px 0px !important;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.select {
+  width: 100% !important;
+}
+
+.company_img {
+  width: 35% !important;
+}
+
+.btn_group {
+  width: 100%;
+  margin-bottom: 25px;
+  justify-content: center;
+}
+
+.add_file_info {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  margin-top: 40px;
+  gap: 40px;
+ 
+  .description_field {
+    width: 400px !important;
+  }
+
+  .container {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+  }
+
+  h4 {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 500;
+  }
+
+  .add_file {
+    width: 200px;
+  }
+
+  .add_btn {
+    order: 1;
+  }
+
+  button {
+    background: transparent;
+    color: #1976d2;
+    border: none;
+    box-shadow: none;
+    min-width: 25px;
+    span {
+      margin: 0;
+    }
+  }
+}
+
+.btn_block {
+  display: flex;
+  order: 1;
+
+  button {
+    min-width: 25px;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+
+    &:last-child {
+      color: red;
+      margin-right: 20px;
+    }
+
+    &:first-child {
+      color: #1976d2;
+    }
+  }
+}
+
+.radioBtnBlock {
+  > div {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.deadline,
+.increasing_deadline {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.add_new_files {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+h5,
+h4 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.83em;
+  font-weight: 500;
+}
+
+h3 {
+  margin-top: 40px;
+  color: #1083b7;
+}
+
+.partner_form {
+  margin-bottom: 25px;
+}
+
+.add_file_select {
+  width: 169px;
+}
+
+.radioBtns {
+  margin-top: 40px;
+}
+
+.add_btn {
+  span {
+    margin: 0;
+  }
+}
+
+.delete_icon {
+  color: red;
+}
+
+.top_block {
+  height: 60px;
+  display: grid;
+  grid-template-columns: 1fr 24px;
+  align-items: center;
+  padding-right: 20px;
+  position: relative;
+
+  .menu > button {
+    padding: 0;
+  }
+
+  .name {
+    height: inherit;
+    @include mixins.flexCenter();
+    text-indent: 20px;
+
+    > p {
+      color: gray;
+      font-size: 18px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 96%;
+    height: 1px;
+    background: #3498db;
+    bottom: 0;
+  }
+}

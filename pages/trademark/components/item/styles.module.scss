@@ -1,0 +1,128 @@
+@use "../../../../styles/mixins";
+
+.number_name {
+  height: 60px;
+  display: grid;
+  grid-template-columns: 1fr 24px;
+  align-items: center;
+  position: relative;
+  padding-right: 20px;
+
+  > a {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    text-indent: 20px;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 96%;
+    height: 1px;
+    background: #3498db;
+    bottom: 0;
+  }
+
+  p {
+    font-size: 18px;
+    color: gray;
+    margin: 0;
+  }
+}
+
+.info_content {
+  display: flex;
+  gap: 100px;
+  padding: 16px 36px;
+
+  figure {
+    margin: 0;
+
+    img {
+      max-width: 180px;
+      max-height: 180px;
+    }
+  }
+
+  @media (max-width: 1300px) {
+    gap: 50px;
+  }
+
+  img {
+    object-fit: contain;
+  }
+}
+
+.info_box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: max-content;
+  grid-auto-rows: max-content;
+  gap: 20px;
+  width: 100%;
+}
+
+.countries_box {
+  > h4 {
+    white-space: nowrap;
+  }
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.countries {
+  grid-row: 2 / 4;
+  grid-column: 4;
+}
+
+h4 {
+  margin: 0 0 4px 0;
+  color: gray;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: start;
+}
+
+span {
+  font-size: 15px;
+}
+
+.list {
+  @include mixins.listStyles;
+  display: block;
+  margin-top: 40px;
+}
+
+.menu {
+  > button {
+    padding: 0;
+  }
+}
+
+.countries_wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.green {
+  color: green;
+  font-size: 14px;
+  text-align: center;
+}
+
+.black {
+  color: black;
+  font-size: 14px;
+  text-align: center;
+}
+
+.red {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+}
