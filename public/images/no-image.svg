@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87 69.23" id="Image">
+  <g style="isolation:isolate" fill="#000000" class="color000000 svgShape">
+    <g id="Layer_2" fill="#000000" class="color000000 svgShape">
+      <g id="Layer_1-2" fill="#000000" class="color000000 svgShape">
+        <path d="M18-1.88h55v73H18z" transform="rotate(-77.75 45.504 34.617)" fill="#eeeeee" class="colorecf0f1 svgShape"></path>
+        <path d="M24 4.12h43v61H24z" transform="rotate(-77.75 45.504 34.617)" fill="#c9c9c9" opacity=".5" class="color94b9ff svgShape"></path>
+        <path d="m39.06 43.05 19.51-12.54 12.88 20.03" fill="#8d8d8d" class="color8cb269 svgShape"></path>
+        <path d="m13.7 37.35 26.07-18.46 16.57 28.37" fill="#a8a8a8" class="colora3d080 svgShape"></path>
+        <path d="M36.21 19.26h12v61h-12z" transform="rotate(-77.75 42.217 49.763)" fill="#a8a8a8" class="colora3d080 svgShape"></path>
+        <path fill="#a5a5a5" d="M48.45 7.38H14.12L4 54.01l38.55 8.37H75v-49.5l-26.55-5.5z" opacity=".5" style="mix-blend-mode:multiply" class="colora8acaf svgShape"></path>
+        <path d="M0 5.38h73v55H0z" fill="#eeeeee" class="colorecf0f1 svgShape"></path>
+        <path d="M6 11.38h61v43H6z" fill="#c9c9c9" opacity=".5" class="color94b9ff svgShape"></path>
+        <path d="m32 42.23 16.4-16.4 16.84 16.84" fill="#8d8d8d" class="color8cb269 svgShape"></path>
+        <path d="m6 42.03 21.57-23.57 22.21 24.21" fill="#a8a8a8" class="colora3d080 svgShape"></path>
+        <path d="M6 42.38h61v12H6z" fill="#a8a8a8" class="colora3d080 svgShape"></path>
+      </g>
+    </g>
+  </g>
+</svg>
